@@ -1,7 +1,6 @@
 ## 1: make a function that creates a list of vectors has 4 functions: set,get,setInverse,getInverse
 ## 2: make a function that either cacluates matrix inversion or returns its cached inversed matrix
 
-## Write a short comment describing this function
 makeCacheMatrix <- function(x = matrix()) {
       i <- NULL #init null vector for inversed matrix
       set <- function(y){
@@ -14,7 +13,6 @@ makeCacheMatrix <- function(x = matrix()) {
       list(set=set,get=get,setInverse=setInverse,getInverse=getInverse)
 }
 
-## Write a short comment describing this function
 cacheSolve <- function(mcm, ...) {
       i <- mcm$getInverse() #try to get a cache data from the input, mcm
       if(!is.null(i)){
